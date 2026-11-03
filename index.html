@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#fefffe',
+              foreground: '#0f172a',
+              primary: '#1e293b',
+              accent: '#d4a562',
+              'accent-dark': '#b88a4d',
+              muted: '#64748b'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Crimson Text', 'serif']
+            }
+          }
+        }
+      };
+    </script>
+</head>
+<body class="bg-background text-foreground antialiased font-sans">
+    <nav class="top-nav glass fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 lg:h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl lg:text-2xl font-serif font-semibold text-primary hover:text-accent transition-colors duration-200">
+                        Your Name
+                    </a>
+                </div>
+
+                <div class="hidden lg:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <ul class="nav-links flex space-x-8">
+                            <li><a href="#homepage" class="nav-item">Homepage</a></li>
+                            <li><a href="#about" class="nav-item">About</a></li>
+                            <li><a href="#latest-news" class="nav-item">News</a></li>
+                            <li><a href="#publications" class="nav-item">Publications</a></li>
+                            <!-- <li><a href="#honors" class="nav-item">Honors</a></li> -->
+                            <!-- <li><a href="#services" class="nav-item">Service</a></li> -->
+                            <li><a href="#educations" class="nav-item">Education</a></li>
+                            <li><a href="#experience" class="nav-item">Experience</a></li>
+                            <li><a href="#contact" class="nav-item">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="lg:hidden flex items-center">
+                    <button class="mobile-menu-btn p-2 rounded-md text-neutral-600 hover:text-primary" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mobile-menu hidden lg:hidden absolute top-16 left-0 w-full bg-white/95 backdrop-blur-md border-b border-neutral-200 shadow-lg" id="mobile-menu">
+                <ul class="flex flex-col py-4 px-4 space-y-4">
+                    <li><a href="#homepage" class="mobile-nav-item block text-neutral-600 hover:text-primary font-medium">Homepage</a></li>
+                    <li><a href="#about" class="mobile-nav-item block text-neutral-600 hover:text-primary font-medium">About</a></li>
+                    <li><a href="#latest-news" class="mobile-nav-item block text-neutral-600 hover:text-primary font-medium">News</a></li>
+                    <li><a href="#publications" class="mobile-nav-item block text-neutral-600 hover:text-primary font-medium">Publications</a></li>
+                    <!-- <li><a href="#honors" class="mobile-nav-item block text-neutral-600 hover:text-primary font-medium">Honors</a></li> -->
+                    <!-- <li><a href="#services" class="mobile-nav-item block text-neutral-600 hover:text-primary font-medium">Service</a></li> -->
+                    <li><a href="#educations" class="mobile-nav-item block text-neutral-600 hover:text-primary font-medium">Education</a></li>
+                    <li><a href="#experience" class="mobile-nav-item block text-neutral-600 hover:text-primary font-medium">Experience</a></li>
+                    <li><a href="#contact" class="mobile-nav-item block text-neutral-600 hover:text-primary font-medium">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="min-h-screen pt-20 lg:pt-28 pb-12">
+        <div class="w-full max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid-layout">
+                <div class="profile-column">
+                    <div class="profile-card sticky top-24">
+                        <div class="profile-image-container mb-6 mx-auto max-w-[180px]">
+                            <img src="assets/profile.jpg?v=865d33b884" alt="Hongyu Zhan" class="w-full h-auto rounded-xl shadow-sm">
+                        </div>
+
+                        <div class="text-center mb-6">
+                            <h1 class="text-3xl font-serif font-bold text-primary mb-2">Hongyu Zhan</h1>
+                            <p class="text-lg text-accent font-medium mb-1">MPhil Student</p>
+                            <p class="text-neutral-600 mb-2">HKUST(GZ)</p>
+                        </div>
+
+                        <div class="social-links flex flex-wrap justify-center gap-3 mb-6">
+                            <a href="https://scholar.google.com/citations?user=9ugPm08AAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer" class="social-btn" title="Google Scholar" aria-label="Hongyu Zhan on Google Scholar"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
+                            <a href="https://github.com/Git-King-Zhan" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub" aria-label="Hongyu Zhan on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="mailto:hyzhan21@gmail.com" class="social-btn" title="Email" aria-label="Email Hongyu Zhan"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/hongyu-zhan-130638445/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn" aria-label="Hongyu Zhan on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        </div>
+
+                        <div class="research-interests-card bg-neutral-100 rounded-xl p-5 mb-6">
+                            <h3 class="font-serif font-bold text-lg text-primary mb-4 pb-2 border-b border-neutral-200 flex items-center">
+                                Research Interests
+                            </h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center text-neutral-700 hover:text-primary transition-colors">
+                                    <span class="text-sm font-medium">Large Language Model</span>
+                                </li>
+                                <li class="flex items-center text-neutral-700 hover:text-primary transition-colors">
+                                    <span class="text-sm font-medium">Multimodal Large Language Model</span>
+                                </li>
+                                <!-- <li class="flex items-center text-neutral-700 hover:text-primary transition-colors">
+                                    <span class="text-sm font-medium">Robotics</span>
+                                </li> -->
+                                <li class="flex items-center text-neutral-700 hover:text-primary transition-colors">
+                                    <span class="text-sm font-medium">Graph Learing</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-column space-y-12">
+                    <section id="homepage" class="scroll-mt-24">
+                        <span id="about"></span>
+                        <div class="section-header mb-6">
+                            <h2 class="text-3xl font-serif font-bold text-primary">About Me</h2>
+                        </div>
+                        <div class="prose max-w-none text-neutral-600 text-justify formal-font">
+                            <p class="mb-4">
+                                Hi, there! I am currently a second-year M.Phil student at HKUST(GZ), supervised by <a href="https://junxia97.github.io/" target="_blank" rel="noopener noreferrer" class="professor-link">Prof. Jun Xia</a> and <a href="https://qcwthu.github.io/" target="_blank" rel="noopener noreferrer" class="professor-link">Prof. Chengwei Qin</a>. Previously, I received my B.Eng in Computer Science from Xi'an Jiaotong University, supervised by <a href="https://zhang-lingling.github.io/" target="_blank" rel="noopener noreferrer" class="professor-link">Prof. Lingling Zhang</a>, and <a href="https://gr.xjtu.edu.cn/wei.ke/" target="_blank" rel="noopener noreferrer" class="professor-link">Prof. Wei Ke</a>. BTW, I have a great passion for badminton and photography, with a particular interest in natural landscapes.
+                            </p>
+
+                            <div class="highlight-box bg-accent/10 border-l-4 border-accent p-4 rounded-r-lg text-left font-sans">
+                                <p>
+                                    <strong><i class="fas fa-lightbulb text-accent mr-2" aria-hidden="true"></i>Open to opportunities.</strong>
+                                    I am currently on the job market and seeking algorithm engineer positions. If you have a suitable opportunity or would like to discuss a potential fit, please <a href="mailto:hyzhan21@gmail.com" class="text-accent hover:text-accent-dark underline underline-offset-2">contact me</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--
+                    <section id="research-thrust" class="scroll-mt-24">
+                        <div class="section-header mb-6">
+                            <h2 class="text-3xl font-serif font-bold text-primary">Research Overview</h2>
+                        </div>
+                        <div class="prose max-w-none text-neutral-600 text-justify formal-font">
+                            <blockquote class="pl-4 border-l-4 border-accent/30 italic text-neutral-600 bg-neutral-50/50 p-4 rounded-r-lg mb-6">
+                                "Use this section to summarize your long-term research vision in one or two sentences."
+                            </blockquote>
+
+                            <p class="mb-8">
+                                The layout below provides two compact research thrust cards. You can rename, remove, or expand them to fit your own research agenda.
+                            </p>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="thrust-card bg-neutral-50 rounded-xl p-5 border border-neutral-100 hover:shadow-md transition-all duration-300 group flex flex-col h-full">
+                                    <h3 class="font-serif font-bold text-lg text-primary mb-4 flex items-center group-hover:text-accent transition-colors">
+                                        <i class="fas fa-microscope text-accent mr-2 group-hover:scale-110 transition-transform"></i> Research Thrust A
+                                    </h3>
+                                    <p class="text-sm leading-relaxed text-justify text-neutral-600 flex-grow">
+                                        Describe your first primary research direction, including its motivation, technical challenges, and representative topics.
+                                    </p>
+                                </div>
+
+                                <div class="thrust-card bg-neutral-50 rounded-xl p-5 border border-neutral-100 hover:shadow-md transition-all duration-300 group flex flex-col h-full">
+                                    <h3 class="font-serif font-bold text-lg text-primary mb-4 flex items-center group-hover:text-accent transition-colors">
+                                        <i class="fas fa-flask text-accent mr-2 group-hover:scale-110 transition-transform"></i> Research Thrust B
+                                    </h3>
+                                    <p class="text-sm leading-relaxed text-justify text-neutral-600 flex-grow">
+                                        Describe your second primary research direction. The cards share a consistent visual language with the rest of the website.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    -->
+
+                    <section id="latest-news" class="scroll-mt-24">
+                        <div class="section-header mb-6 flex justify-between items-center">
+                            <h2 class="text-3xl font-serif font-bold text-primary">Latest News</h2>
+                            <a href="pages/all-news.html" class="text-sm font-medium text-accent hover:text-accent-dark transition-colors">View All <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                        <div id="news-container" class="news-list space-y-4">
+                            <div class="news-item">
+                                <span class="news-date">2026.9:</span>
+                                <div class="news-content"><span>🎉🎉 One paper got accepted to NeurIPS 2026, see you in Sydney, Australia!</span></div>
+                            </div>
+                            <div class="news-item">
+                                <span class="news-date">2026.5:</span>
+                                <div class="news-content"><span>🎉🎉 One paper got accepted to GFM@ICML 2025</span></div>
+                            </div>
+                            <div class="news-item">
+                                <span class="news-date">2026.5:</span>
+                                <div class="news-content"><span>🎉🎉 One paper got accepted to ICML 2025</span></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="publications" class="scroll-mt-24">
+                        <div class="section-header mb-6 flex justify-between items-start gap-4">
+                            <div>
+                                <h2 class="text-3xl font-serif font-bold text-primary">Selected Publications</h2>
+                                <p class="text-sm text-neutral-500 mt-1"><span>* Equal contribution (co-first authors).</span> <span>† Corresponding author.</span></p>
+                            </div>
+                            <a href="pages/all-publications.html" class="text-sm font-medium text-accent hover:text-accent-dark transition-colors whitespace-nowrap mt-1">View Full List <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+
+                        <div id="featured-publications-container" class="publications-list space-y-6">
+<ul class="pub-list-ul">
+<li class="pub-list-item with-thumbnail-expanded">
+    <div class="pub-content-wrapper">
+        <div class="pub-line-1"><span class="pub-title-text">LLM-Enhanced Heterogeneous Graph Learning with Business Semantics for Financial Fraud Detection</span></div>
+        <div class="pub-line-2">Yixuan Chen<sup title="Equal contribution">*</sup>, <strong>Hongyu Zhan</strong><sup title="Equal contribution">*</sup>, Jie Sheng, Weiyu Han, et al.</div>
+        <div class="pub-line-3"><span>arXiv preprint</span></div>
+        <div class="pub-line-4"><a class="pub-link-btn" href="https://arxiv.org/pdf/2610.35298" target="_blank" rel="noopener noreferrer">PDF</a></div>
+    </div>
+    <div class="pub-thumbnail-box"><img src="assets/publications/semhgt/paper-thumb.png" alt="LLM-Enhanced Heterogeneous Graph Learning with Business Semantics for Financial Fraud Detection framework" loading="lazy"></div>
+</li>
+<li class="pub-list-item with-thumbnail-expanded">
+    <div class="pub-content-wrapper">
+        <div class="pub-line-1"><span class="pub-title-text">FinFraudBench: A Heterogeneous Graph Benchmark for Financial Fraud Detection</span></div>
+        <div class="pub-line-2">Yixuan Chen<sup title="Equal contribution">*</sup>, <strong>Hongyu Zhan</strong><sup title="Equal contribution">*</sup>, Jie Sheng, Weiyu Han, et al.</div>
+        <div class="pub-line-3"><span>arXiv preprint</span></div>
+        <div class="pub-line-4"><a class="pub-link-btn" href="https://arxiv.org/pdf/2608.15177" target="_blank" rel="noopener noreferrer">PDF</a></div>
+    </div>
+    <div class="pub-thumbnail-box"><img src="assets/publications/finfraudbench/paper-thumb.png" alt="FinFraudBench: A Heterogeneous Graph Benchmark for Financial Fraud Detection framework" loading="lazy"></div>
+</li>
+<li class="pub-list-item with-thumbnail-expanded">
+    <div class="pub-content-wrapper">
+        <div class="pub-line-1"><span class="pub-title-text">Towards Reasonable Molecular Structure Elucidation from Infrared Spectroscopy with Chemical Feedback</span></div>
+        <div class="pub-line-2">Yusen Tan, <strong>Hongyu Zhan</strong>, Hai-tao Yu, Changxi Chi, et al.</div>
+        <div class="pub-line-3"><span>arXiv preprint</span></div>
+        <div class="pub-line-4"><a class="pub-link-btn" href="https://arxiv.org/pdf/2608.16082" target="_blank" rel="noopener noreferrer">PDF</a></div>
+    </div>
+    <div class="pub-thumbnail-box"><img src="assets/publications/firmpo/paper-thumb.png" alt="Towards Reasonable Molecular Structure Elucidation from Infrared Spectroscopy with Chemical Feedback framework" loading="lazy"></div>
+</li>
+<li class="pub-list-item with-thumbnail-expanded">
+    <div class="pub-content-wrapper">
+        <div class="pub-line-1"><span class="pub-title-text">LoReC: Rethinking Large Language Models for Graph Data Analysis</span></div>
+        <div class="pub-line-2"><strong>Hongyu Zhan</strong>, Qixin Wang, Yusen Tan, Haitao Yu, et al.</div>
+        <div class="pub-line-3"><span>NeurIPS 2026</span><span class="pub-badge-highlight">Poster</span><span class="pub-venue-tag pub-venue-inline-tag tag-conference">CCF-A</span></div>
+        <div class="pub-line-4"><a class="pub-link-btn" href="https://arxiv.org/pdf/2604.17897" target="_blank" rel="noopener noreferrer">PDF</a><a class="pub-link-btn" href="https://github.com/Git-King-Zhan/LoReC" target="_blank" rel="noopener noreferrer">Code</a></div>
+    </div>
+    <div class="pub-thumbnail-box"><img src="assets/publications/lorec/paper-thumb.png" alt="LoReC: Rethinking Large Language Models for Graph Data Analysis framework" loading="lazy"></div>
+</li>
+<li class="pub-list-item with-thumbnail-expanded">
+    <div class="pub-content-wrapper">
+        <div class="pub-line-1"><span class="pub-title-text">MM-Spectrum: Multimodal Multi-spectral Molecular Structural Elucidation with a Stable MoE Framework</span></div>
+        <div class="pub-line-2">Hai-tao Yu, Nan Min, Zheng Fang, <strong>Hongyu Zhan</strong>, et al.</div>
+        <div class="pub-line-3"><span>ICML 2026</span><span class="pub-badge-highlight">Poster</span><span class="pub-venue-tag pub-venue-inline-tag tag-conference">CCF-A</span></div>
+        <div class="pub-line-4"><a class="pub-link-btn" href="https://arxiv.org/pdf/2608.27286" target="_blank" rel="noopener noreferrer">PDF</a><a class="pub-link-btn" href="https://github.com/HHHTTY/MM-Spectrum" target="_blank" rel="noopener noreferrer">Code</a></div>
+    </div>
+    <div class="pub-thumbnail-box"><img src="assets/publications/mm-spectrum/paper-thumb.png" alt="MM-Spectrum: Multimodal Multi-spectral Molecular Structural Elucidation with a Stable MoE Framework framework" loading="lazy"></div>
+</li>
+</ul>
+</div>
+                    </section>
+
+                    <!--
+                    <section id="honors" class="scroll-mt-24">
+                        <div class="section-header mb-6 flex justify-between items-center">
+                            <h2 class="text-3xl font-serif font-bold text-primary">Honors & Awards</h2>
+                            <a href="pages/all-honors.html" class="text-sm font-medium text-accent hover:text-accent-dark transition-colors">View All <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                        <div id="honors-container" class="honors-list space-y-4"></div>
+                    </section>
+                    -->
+
+                    <!--
+                    <section id="services" class="scroll-mt-24">
+                        <div class="section-header mb-6">
+                            <h2 class="text-3xl font-serif font-bold text-primary">Academic Service</h2>
+                        </div>
+                        <div class="timeline space-y-6">
+                            <div class="timeline-item flex gap-4">
+                                <div class="school-logo-container w-16 h-16 flex-shrink-0 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center border border-neutral-100 text-2xl text-accent">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 class="font-semibold text-primary">Conference Reviewer</h3>
+                                    <p class="text-sm text-accent font-medium">Selected Venues</p>
+                                    <p class="text-sm text-neutral-600 mt-1 leading-relaxed">CVPR, ICCV, ECCV, NeurIPS, ICLR, AAAI</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item flex gap-4">
+                                <div class="school-logo-container w-16 h-16 flex-shrink-0 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center border border-neutral-100 text-2xl text-accent">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 class="font-semibold text-primary">Journal Reviewer</h3>
+                                    <p class="text-sm text-accent font-medium">Peer Review</p>
+                                    <p class="text-sm text-neutral-600 mt-1 leading-relaxed">List journals or editorial services here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    -->
+
+                    <section id="educations" class="scroll-mt-24">
+                        <div class="section-header mb-6">
+                            <h2 class="text-3xl font-serif font-bold text-primary">Education</h2>
+                        </div>
+                        <div class="timeline space-y-6">
+                            <div class="timeline-item flex gap-4">
+                                <div class="school-logo-container w-16 h-16 flex-shrink-0 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center border border-neutral-100 text-2xl text-accent">
+                                    <img src="assets/logos/hkustgz.png" alt="HKUST(GZ) emblem" class="institution-logo" width="48" height="48" loading="lazy">
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 class="font-semibold text-primary">M.Phil in Data Science and Analysis</h3>
+                                    <p class="text-sm text-accent font-medium">2025.9 - Present</p>
+                                    <p class="text-sm text-neutral-600 mt-1">HKUST(GZ)</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item flex gap-4">
+                                <div class="school-logo-container w-16 h-16 flex-shrink-0 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center border border-neutral-100 text-2xl text-accent">
+                                    <img src="assets/logos/xjtu.jpg" alt="Xi’an Jiaotong University emblem" class="institution-logo" width="48" height="48" loading="lazy">
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 class="font-semibold text-primary">B.Eng in Computer Science</h3>
+                                    <p class="text-sm text-accent font-medium">2020.9 - 2024.6</p>
+                                    <p class="text-sm text-neutral-600 mt-1">Xi'an Jiaotong University</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="experience" class="scroll-mt-24">
+                        <div class="section-header mb-6">
+                            <h2 class="text-3xl font-serif font-bold text-primary">Experience</h2>
+                        </div>
+                        <div class="timeline space-y-6">
+                            <div class="timeline-item flex gap-4">
+                                <div class="w-16 h-16 flex-shrink-0 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center border border-neutral-100 text-2xl text-accent">
+                                    <img src="assets/logos/alibaba-cloud.png" alt="Alibaba Cloud logo" class="institution-logo" width="48" height="48" loading="lazy">
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 class="font-semibold text-primary">Summer Intern</h3>
+                                    <p class="text-sm text-accent font-medium">2026.6-2026.8</p>
+                                    <p class="text-sm text-neutral-600 mt-1">Alibaba Cloud</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item flex gap-4">
+                                <div class="w-16 h-16 flex-shrink-0 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center border border-neutral-100 text-2xl text-accent">
+                                    <img src="assets/logos/ant-group.jpg" alt="Ant Group logo" class="institution-logo" width="48" height="48" loading="lazy">
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 class="font-semibold text-primary">Research Intern</h3>
+                                    <p class="text-sm text-accent font-medium">2026.5-2026.6</p>
+                                    <p class="text-sm text-neutral-600 mt-1">Ant Group</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item flex gap-4">
+                                <div class="w-16 h-16 flex-shrink-0 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center border border-neutral-100 text-2xl text-accent">
+                                    <img src="assets/logos/notre-dame.svg" alt="University of Notre Dame shield" class="institution-logo" width="48" height="48" loading="lazy">
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 class="font-semibold text-primary">Research Assistant</h3>
+                                    <p class="text-sm text-accent font-medium">2023.7-2024.5</p>
+                                    <p class="text-sm text-neutral-600 mt-1">University of Notre Dame</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="contact" class="scroll-mt-24">
+                        <div class="section-header mb-6">
+                            <h2 class="text-3xl font-serif font-bold text-primary">Contact</h2>
+                        </div>
+                        <div class="contact-card bg-white rounded-xl shadow-sm border border-neutral-200 p-5">
+                            <h3 class="font-semibold text-primary mb-2">Email</h3>
+                            <div class="space-y-2">
+                                <p class="text-neutral-600 flex items-start gap-2">
+                                    <i class="fas fa-envelope mt-1 text-accent" aria-hidden="true"></i>
+                                    <a href="mailto:hyzhan21@gmail.com" class="break-all hover:text-accent">hyzhan21@gmail.com</a>
+                                </p>
+                                <p class="text-neutral-600 flex items-start gap-2">
+                                    <i class="fas fa-envelope mt-1 text-accent" aria-hidden="true"></i>
+                                    <a href="mailto:hzhan701@connect.hkust-gz.edu.cn" class="break-all hover:text-accent">hzhan701@connect.hkust-gz.edu.cn</a>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-neutral-200 py-8 mt-12 bg-neutral-50">
+        <div class="max-w-[90rem] mx-auto px-4 text-center text-neutral-500 text-sm">
+            <p>&copy; <span id="current-year"></span> Hongyu Zhan. All rights reserved.</p>
+            <!-- <p class="mt-2">Built with <a href="https://github.com/yihangtao/AcaNova-X" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline font-medium">AcaNova-X</a></p> -->
+        </div>
+    </footer>
+
+    <script id="publications-data" type="application/json">
+[
+  {
+    "title": "LLM-Enhanced Heterogeneous Graph Learning with Business Semantics for Financial Fraud Detection",
+    "authors": "Yixuan Chen<sup title=\"Equal contribution\">*<\/sup>, <strong>Hongyu Zhan<\/strong><sup title=\"Equal contribution\">*<\/sup>, Jie Sheng, Weiyu Han, et al.",
+    "type": "preprint",
+    "isFirstAuthor": true,
+    "showOnHomepage": true,
+    "featuredOrder": 1,
+    "venue": "arXiv preprint",
+    "year": "2026",
+    "thumbnail": "assets/publications/semhgt/paper-thumb.png",
+    "tags": [
+      {
+        "text": "Paper",
+        "link": "https://arxiv.org/pdf/2610.35298"
+      }
+    ],
+    "fullAuthors": "Yixuan Chen<sup title=\"Equal contribution\">*<\/sup>, <strong>Hongyu Zhan<\/strong><sup title=\"Equal contribution\">*<\/sup>, Jie Sheng, Weiyu Han, Shuai Chen, Tianyi Zhang, Xiao Tan<sup title=\"Corresponding author\">†<\/sup>, Jun Xia<sup title=\"Corresponding author\">†<\/sup>"
+  },
+  {
+    "title": "FinFraudBench: A Heterogeneous Graph Benchmark for Financial Fraud Detection",
+    "authors": "Yixuan Chen<sup title=\"Equal contribution\">*<\/sup>, <strong>Hongyu Zhan<\/strong><sup title=\"Equal contribution\">*<\/sup>, Jie Sheng, Weiyu Han, et al.",
+    "type": "preprint",
+    "isFirstAuthor": true,
+    "showOnHomepage": true,
+    "featuredOrder": 2,
+    "venue": "arXiv preprint",
+    "year": "2026",
+    "thumbnail": "assets/publications/finfraudbench/paper-thumb.png",
+    "tags": [
+      {
+        "text": "Paper",
+        "link": "https://arxiv.org/pdf/2608.15177"
+      }
+    ],
+    "fullAuthors": "Yixuan Chen<sup title=\"Equal contribution\">*<\/sup>, <strong>Hongyu Zhan<\/strong><sup title=\"Equal contribution\">*<\/sup>, Jie Sheng, Weiyu Han, Shuai Chen, Tianyi Zhang, Xiao Tan<sup title=\"Corresponding author\">†<\/sup>, Jun Xia<sup title=\"Corresponding author\">†<\/sup>"
+  },
+  {
+    "title": "Towards Reasonable Molecular Structure Elucidation from Infrared Spectroscopy with Chemical Feedback",
+    "authors": "Yusen Tan, <strong>Hongyu Zhan<\/strong>, Hai-tao Yu, Changxi Chi, et al.",
+    "type": "preprint",
+    "isFirstAuthor": false,
+    "showOnHomepage": true,
+    "featuredOrder": 3,
+    "venue": "arXiv preprint",
+    "year": "2026",
+    "thumbnail": "assets/publications/firmpo/paper-thumb.png",
+    "tags": [
+      {
+        "text": "Paper",
+        "link": "https://arxiv.org/pdf/2608.16082"
+      }
+    ],
+    "fullAuthors": "Yusen Tan, <strong>Hongyu Zhan<\/strong>, Hai-tao Yu, Changxi Chi, Wenjie Du, Jun Xia<sup title=\"Corresponding author\">†<\/sup>"
+  },
+  {
+    "title": "LoReC: Rethinking Large Language Models for Graph Data Analysis",
+    "authors": "<strong>Hongyu Zhan<\/strong>, Qixin Wang, Yusen Tan, Haitao Yu, et al.",
+    "type": "accepted",
+    "isFirstAuthor": true,
+    "showOnHomepage": true,
+    "featuredOrder": 4,
+    "venue": "NeurIPS 2026",
+    "year": "2026",
+    "thumbnail": "assets/publications/lorec/paper-thumb.png",
+    "tags": [
+      {
+        "text": "Paper",
+        "link": "https://arxiv.org/pdf/2604.17897"
+      },
+      {
+        "text": "Code",
+        "link": "https://github.com/Git-King-Zhan/LoReC"
+      }
+    ],
+    "highlight": "(Poster)",
+    "ranking": "CCF-A",
+    "fullAuthors": "<strong>Hongyu Zhan<\/strong>, Qixin Wang, Yusen Tan, Haitao Yu, Jingbo Zhou, Shuai Chen, Jia Li, Xiao Tan<sup title=\"Corresponding author\">†<\/sup>, Jun Xia<sup title=\"Corresponding author\">†<\/sup>"
+  },
+  {
+    "title": "MM-Spectrum: Multimodal Multi-spectral Molecular Structural Elucidation with a Stable MoE Framework",
+    "authors": "Hai-tao Yu, Nan Min, Zheng Fang, <strong>Hongyu Zhan<\/strong>, et al.",
+    "type": "accepted",
+    "isFirstAuthor": false,
+    "showOnHomepage": true,
+    "featuredOrder": 5,
+    "venue": "ICML 2026",
+    "year": "2026",
+    "thumbnail": "assets/publications/mm-spectrum/paper-thumb.png",
+    "tags": [
+      {
+        "text": "Paper",
+        "link": "https://arxiv.org/pdf/2608.27286"
+      },
+      {
+        "text": "Code",
+        "link": "https://github.com/HHHTTY/MM-Spectrum"
+      }
+    ],
+    "highlight": "(Poster)",
+    "ranking": "CCF-A",
+    "fullAuthors": "Hai-tao Yu, Nan Min, Zheng Fang, <strong>Hongyu Zhan<\/strong>, Yusen Tan, Yuhan Wang, Jun Xia<sup title=\"Corresponding author\">†<\/sup>"
+  }
+]
+    </script>
+    <script src="script.js?v=20261103-publications-local"></script>
+</body>
+</html>

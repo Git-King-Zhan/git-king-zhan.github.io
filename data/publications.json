@@ -1,0 +1,104 @@
+[
+  {
+    "title": "LLM-Enhanced Heterogeneous Graph Learning with Business Semantics for Financial Fraud Detection",
+    "authors": "Yixuan Chen<sup title=\"Equal contribution\">*</sup>, <strong>Hongyu Zhan</strong><sup title=\"Equal contribution\">*</sup>, Jie Sheng, Weiyu Han, et al.",
+    "type": "preprint",
+    "isFirstAuthor": true,
+    "showOnHomepage": true,
+    "featuredOrder": 1,
+    "venue": "arXiv preprint",
+    "year": "2026",
+    "thumbnail": "assets/publications/semhgt/paper-thumb.png",
+    "tags": [
+      {
+        "text": "Paper",
+        "link": "https://arxiv.org/pdf/2610.35298"
+      }
+    ],
+    "fullAuthors": "Yixuan Chen<sup title=\"Equal contribution\">*</sup>, <strong>Hongyu Zhan</strong><sup title=\"Equal contribution\">*</sup>, Jie Sheng, Weiyu Han, Shuai Chen, Tianyi Zhang, Xiao Tan<sup title=\"Corresponding author\">†</sup>, Jun Xia<sup title=\"Corresponding author\">†</sup>"
+  },
+  {
+    "title": "FinFraudBench: A Heterogeneous Graph Benchmark for Financial Fraud Detection",
+    "authors": "Yixuan Chen<sup title=\"Equal contribution\">*</sup>, <strong>Hongyu Zhan</strong><sup title=\"Equal contribution\">*</sup>, Jie Sheng, Weiyu Han, et al.",
+    "type": "preprint",
+    "isFirstAuthor": true,
+    "showOnHomepage": true,
+    "featuredOrder": 2,
+    "venue": "arXiv preprint",
+    "year": "2026",
+    "thumbnail": "assets/publications/finfraudbench/paper-thumb.png",
+    "tags": [
+      {
+        "text": "Paper",
+        "link": "https://arxiv.org/pdf/2608.15177"
+      }
+    ],
+    "fullAuthors": "Yixuan Chen<sup title=\"Equal contribution\">*</sup>, <strong>Hongyu Zhan</strong><sup title=\"Equal contribution\">*</sup>, Jie Sheng, Weiyu Han, Shuai Chen, Tianyi Zhang, Xiao Tan<sup title=\"Corresponding author\">†</sup>, Jun Xia<sup title=\"Corresponding author\">†</sup>"
+  },
+  {
+    "title": "Towards Reasonable Molecular Structure Elucidation from Infrared Spectroscopy with Chemical Feedback",
+    "authors": "Yusen Tan, <strong>Hongyu Zhan</strong>, Hai-tao Yu, Changxi Chi, et al.",
+    "type": "preprint",
+    "isFirstAuthor": false,
+    "showOnHomepage": true,
+    "featuredOrder": 3,
+    "venue": "arXiv preprint",
+    "year": "2026",
+    "thumbnail": "assets/publications/firmpo/paper-thumb.png",
+    "tags": [
+      {
+        "text": "Paper",
+        "link": "https://arxiv.org/pdf/2608.16082"
+      }
+    ],
+    "fullAuthors": "Yusen Tan, <strong>Hongyu Zhan</strong>, Hai-tao Yu, Changxi Chi, Wenjie Du, Jun Xia<sup title=\"Corresponding author\">†</sup>"
+  },
+  {
+    "title": "LoReC: Rethinking Large Language Models for Graph Data Analysis",
+    "authors": "<strong>Hongyu Zhan</strong>, Qixin Wang, Yusen Tan, Haitao Yu, et al.",
+    "type": "accepted",
+    "isFirstAuthor": true,
+    "showOnHomepage": true,
+    "featuredOrder": 4,
+    "venue": "NeurIPS 2026",
+    "year": "2026",
+    "thumbnail": "assets/publications/lorec/paper-thumb.png",
+    "tags": [
+      {
+        "text": "Paper",
+        "link": "https://arxiv.org/pdf/2604.17897"
+      },
+      {
+        "text": "Code",
+        "link": "https://github.com/Git-King-Zhan/LoReC"
+      }
+    ],
+    "highlight": "(Poster)",
+    "ranking": "CCF-A",
+    "fullAuthors": "<strong>Hongyu Zhan</strong>, Qixin Wang, Yusen Tan, Haitao Yu, Jingbo Zhou, Shuai Chen, Jia Li, Xiao Tan<sup title=\"Corresponding author\">†</sup>, Jun Xia<sup title=\"Corresponding author\">†</sup>"
+  },
+  {
+    "title": "MM-Spectrum: Multimodal Multi-spectral Molecular Structural Elucidation with a Stable MoE Framework",
+    "authors": "Hai-tao Yu, Nan Min, Zheng Fang, <strong>Hongyu Zhan</strong>, et al.",
+    "type": "accepted",
+    "isFirstAuthor": false,
+    "showOnHomepage": true,
+    "featuredOrder": 5,
+    "venue": "ICML 2026",
+    "year": "2026",
+    "thumbnail": "assets/publications/mm-spectrum/paper-thumb.png",
+    "tags": [
+      {
+        "text": "Paper",
+        "link": "https://arxiv.org/pdf/2608.27286"
+      },
+      {
+        "text": "Code",
+        "link": "https://github.com/HHHTTY/MM-Spectrum"
+      }
+    ],
+    "highlight": "(Poster)",
+    "ranking": "CCF-A",
+    "fullAuthors": "Hai-tao Yu, Nan Min, Zheng Fang, <strong>Hongyu Zhan</strong>, Yusen Tan, Yuhan Wang, Jun Xia<sup title=\"Corresponding author\">†</sup>"
+  }
+]
