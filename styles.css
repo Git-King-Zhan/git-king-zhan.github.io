@@ -599,3 +599,21 @@ details summary {
     color: #925f19;
     text-decoration-color: currentColor;
 }
+
+.visitor-map-widget {
+    width: 100%;
+    max-width: 320px;
+    margin-inline: auto;
+    overflow: hidden;
+    border-radius: 0.75rem;
+}
+
+.visitor-map-widget a,
+.visitor-map-widget img {
+    display: block;
+    width: 100%;
+}
+
+.visitor-map-widget img {
+    height: auto;
+}
